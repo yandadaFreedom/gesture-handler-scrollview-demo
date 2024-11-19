@@ -5,6 +5,14 @@ require Pod::Executable.execute_command('node', ['-p',
     {paths: [process.argv[1]]},
   )', __dir__]).strip
 
+require_relative '../node_modules/react-native/scripts/react_native_pods'
+require_relative '../node_modules/@react-native-community/cli-platform-ios/native_modules'
+
+
+ENV['RCT_NEW_ARCH_ENABLED'] = '1'
+ENV['USE_FABRIC'] = '1'  # 添加这行
+ENV['USE_HERMES'] = '1'  # 添加这行
+
 platform :ios, min_ios_version_supported
 prepare_react_native_project!
 
@@ -16,8 +24,14 @@ end
 
 target 'AwesomeProject76' do
   config = use_native_modules!
+  fabric_enabled = false
+  if ENV['USE_FABRIC'] == '1'
+    puts "Building rn-demo-app with Fabric enabled."
+    fabric_enabled = true
+  end
 
   use_react_native!(
+    :fabric_enabled => true,
     :path => config[:reactNativePath],
     # An absolute path to your application root.
     :app_path => "#{Pod::Config.instance.installation_root}/.."
