@@ -13,7 +13,7 @@ const styles = StyleSheet.create({
     backgroundColor: 'red',
     width: "100%",
   },
-  form: {
+  viewContainer: {
     display: "flex",
     flexDirection: "row",
     justifyContent: "flex-start",
@@ -58,7 +58,7 @@ function App() {
           horizontal={true}
           style={styles.scrollView}
         >
-          <View style={styles.form}>
+          <View style={styles.viewContainer}>
             <View onTouchStart={onTouchStart1} style={{...styles.ViewItem, ...styles.View1}}><Text>View1</Text></View>
             <View onTouchStart={onTouchStart2}  style={{...styles.ViewItem, ...styles.View2}}><Text>View2</Text></View>
             <View onTouchStart={onTouchStart3} style={{...styles.ViewItem, ...styles.View3}}><Text>View3</Text></View>
