@@ -1,5 +1,4 @@
-import { ScrollView, GestureHandlerRootView } from 'react-native-gesture-handler'
-import { StyleSheet, View, Text } from 'react-native';
+import { StyleSheet, View, Text, ScrollView } from 'react-native';
 
 const styles = StyleSheet.create({
   wrapper: {
@@ -52,7 +51,6 @@ function App() {
     alert('onTouchStart1')
   }
   return (
-    <GestureHandlerRootView> 
       <View style={styles.wrapper}>
         <ScrollView
           horizontal={true}
@@ -65,7 +63,6 @@ function App() {
           </View>
         </ScrollView>
       </View>
-    </GestureHandlerRootView>
   );
 }
 

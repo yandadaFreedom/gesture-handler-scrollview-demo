@@ -1210,6 +1210,11 @@
   resolved "http://artifactory.intra.xiaojukeji.com/artifactory/api/npm/npm/@bcoe/v8-coverage/-/v8-coverage-0.2.3.tgz?dl=https%3A%2F%2Fregistry.npmmirror.com%2F%40bcoe%2Fv8-coverage%2F-%2Fv8-coverage-0.2.3.tgz"
   integrity sha512-0hYQ8SB4Db5zvZB4axdMHGwEaQjkZzFjQiN9LVYvIFB2nSUHW9tYpxWriPrWDASIxiaXax83REcLxuSdnGPZtw==
 
+"@didi/browserslist-config-fin@^2.2.18":
+  version "2.2.18"
+  resolved "http://artifactory.intra.xiaojukeji.com/artifactory/api/npm/npm/@didi/browserslist-config-fin/-/@didi/browserslist-config-fin-2.2.18.tgz#0fbefdf164c20da9df6412a33f47358e5d8d8395"
+  integrity sha512-O+0e3ZpQyWe0zp3oYGRZI13GfqMG/pqhds5vz+76CnR/vS36fDCAlRdpRh6sIznZZfDJh0awk7Jf+TI4/oJUnA==
+
 "@egjs/hammerjs@^2.0.17":
   version "2.0.17"
   resolved "https://registry.npmjs.org/@egjs/hammerjs/-/hammerjs-2.0.17.tgz"
